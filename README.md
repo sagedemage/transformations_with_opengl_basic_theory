@@ -14,6 +14,7 @@ $$v=\begin{pmatrix}x\cr y\cr z\cr\end{pmatrix}$$
 
 ### 1.1 Scalar vector operations
 A **scalar** is a single digit. Adding, subtracting, multiplying or dividing a vector with a scalar mean we add, subtract, multiply, or divide each element of the vector via a scalar.
+
 $$\begin{pmatrix}1\cr 2\cr 3\cr\end{pmatrix}+x -> \begin{pmatrix}1\cr 2\cr 3\cr\end{pmatrix}+\begin{pmatrix}x\cr x\cr x\cr\end{pmatrix}=\begin{pmatrix}1+x\cr 2+x\cr 3+x\cr\end{pmatrix}$$
 
 Where + can be +, &#8213;, or / where &#0183; is the multiplication operator.
