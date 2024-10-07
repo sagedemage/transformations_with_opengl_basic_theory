@@ -71,11 +71,13 @@ The dot product of two vectors is equal to the scalar product of their lengths t
 $$\overline{v} \cdot \overline{k} = ||\overline{v}|| \cdot ||\overline{k}|| \cdot \cos(\theta)$$
 
 Theta (&#0952) is the angle between two vectors. If <span style="text-decoration:overline">v</span>  and <span style="text-decoration:overline">k</span>  are unit vectors, their length would be equal to 1. This would mean the formula is:
+
 $$\hat{v} \cdot \hat{k} = 1 \cdot 1 \cdot \cos(\theta) = \cos(\theta)$$
 
 This formula *only* defines the angle between two vectors. Cosine function becomes 0 when the angle is 90 degrees or 1 when the angle is 0. This provides a easy method to test if two vectors are orthogonal or parallel to each other using the dot product. **Orthogonal** means the vectors are at a right-angle of each other. 
 
 The **dot product** is a component-wise multiplication where we add the results together. Here is an example with two unit vectors:
+
 $$\begin{pmatrix}0.6\cr -0.8\cr 0\cr\end{pmatrix} \cdot \begin{pmatrix}0\cr 1\cr 0\cr\end{pmatrix} = (0.6 * 0) + (-0.8*1) + (0*0) = -0.8$$
 
 To get the degree between these two unit vectors, we use the inverse of the cosine function cos-1. The result is 143.1 degrees. For example, it would be cos-1(-0.8) = 143.1 degrees. The dot product is useful when performing lighting calculations. 
@@ -91,6 +93,7 @@ $$\begin{pmatrix}Ax\cr Ay\cr Az\cr\end{pmatrix} \times \begin{pmatrix}Bx\cr By\c
 
 ## 2. Matrices
 A **matrix** is a rectangular array of numbers, symbols, and/or mathematical expressions. Each individual item in a matrix is called an **element** of the matrix. 
+
 $$\begin{bmatrix}1&2&3\cr 4&5&6 \end{bmatrix}$$
 
 Matrices are indexed by (i, j) where i is the row and j is the column, that is why the above matrix is called a 2x3 matrix (4 columns and 2 rows, also known as the **dimensions** of the matrix). This is different when indexing 2D graphs as (x, y). To get the value 4, we would index it as (2, 1) (second row, first column).  
@@ -114,7 +117,6 @@ A matrix-scalar product multiples each element of the matrix by a scalar.
 An example of matrix scalar multiplication.
 
 $$ 2 \cdot \begin{bmatrix}1&2\cr 3&4 \end{bmatrix} = \begin{bmatrix}2\cdot1&2\cdot2\cr 2\cdot3&2\cdot4\end{bmatrix} = \begin{bmatrix}2&4\cr 6&8 \end{bmatrix}$$
-
 
 A scalar scales all elements of the matrix by its value. In the example above, all elements were scaled by 2.
 
