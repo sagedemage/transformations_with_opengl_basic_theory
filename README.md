@@ -23,6 +23,7 @@ Where + can be +, &#8213;, or / where &#0183; is the multiplication operator.
 
 ### 1.3 Addition and subtraction
 The addition of two vectors is called a **component-wise** addition. This means each component of one vector is added to the same component of the other vector. 
+
 $$\overline{v} = \begin{pmatrix}1\cr 2\cr 3\cr\end{pmatrix}, \overline{k} = \begin{pmatrix}4\cr 5\cr 6\cr\end{pmatrix}-> \overline{v}+\overline{k}=\begin{pmatrix}1+4\cr 2+5\cr 3+6\cr\end{pmatrix}=\begin{pmatrix}5\cr 7\cr 9\cr\end{pmatrix}$$
 
 It looks like this on vectors v=(4, 2) and k=(1, 2), where the second vector's origin point is added on top of the first vector's end point to find the end point of the resulting vector. This is called the **head-to-tail** method.
@@ -55,6 +56,7 @@ $$||\overline{v}|| = \sqrt{4^2 + 2^2} = \sqrt{16 + 4} = \sqrt{20} = 4.47$$
 The answer is `4.47`.
 
 A **unit vector** is a special type of vector that contains one extra property and it has a condition where its length is exactly 1. We calculate the unit vector n from any vector by dividing each of the vector's components by its length:
+
 $$ \hat{n} = { \overline{v} \over ||\overline{v}||} $$
 
 This is called **normalizing** a vector. **Normalizing** a vector means to take a vector of any length, keep it pointing the same direction, change its length to 1, turning it into a **unit vector**. Unit vectors are shown with a little roof over their head. They are easier to work with, this is especially handy when we only care about their directions (the direction stays the same if the vector's length changes).
@@ -65,6 +67,7 @@ and the other is the **cross product** denoted as <span style="text-decoration:o
 
 #### 1.5.1 Dot product
 The dot product of two vectors is equal to the scalar product of their lengths times the cosine of the angle between them. The formula is the following:
+
 $$\overline{v} \cdot \overline{k} = ||\overline{v}|| \cdot ||\overline{k}|| \cdot \cos(\theta)$$
 
 Theta (&#0952) is the angle between two vectors. If <span style="text-decoration:overline">v</span>  and <span style="text-decoration:overline">k</span>  are unit vectors, their length would be equal to 1. This would mean the formula is:
@@ -83,6 +86,7 @@ The cross product is only defined in *3D space*. The cross product takes two non
 ![Cross Product of Two Vectors](./images/5_cross_product_of_two_vectors.webp)
 
 For example, here is the cross product of two orthogonal vectors A and B:
+
 $$\begin{pmatrix}Ax\cr Ay\cr Az\cr\end{pmatrix} \times \begin{pmatrix}Bx\cr By\cr Bz\cr\end{pmatrix} = \begin{pmatrix}Ay \cdot Bz - Az \cdot By \cr Az \cdot Bx - Ax \cdot Bz \cr Ax \cdot By - Ay \cdot Bx \cr\end{pmatrix} $$
 
 ## 2. Matrices
@@ -97,15 +101,18 @@ Matrices have a nice set of mathematical properties and just like vectors we can
 Matrix addition and subtraction between two matrices is done a per-element basis. The same general rules apply with normal numbers, but they are done on the elements of both matrices with the same index. This means that addition and subtraction is only allowed for matrices of the same dimensions. A 3x2 matrix and a 2x3 matrix cannot be added or subtracted together. 
 
 An example of how matrix addition works on two 2x2 matrices:
+
 $$\begin{bmatrix}1&2\cr 3&4 \end{bmatrix} + \begin{bmatrix}5&6\cr 7&8\end{bmatrix} = \begin{bmatrix}1+5&2+6\cr 3+7&4+8\end{bmatrix} = \begin{bmatrix}6&8\cr 10&12 \end{bmatrix}$$
 
 Another example for applying the same idea for matrix subtraction
+
 $$\begin{bmatrix}4&2\cr 1&6 \end{bmatrix} - \begin{bmatrix}2&4\cr 0&1\end{bmatrix} = \begin{bmatrix}4-2&2-4\cr 1-0&6-1\end{bmatrix} = \begin{bmatrix}2&-2\cr 1&5 \end{bmatrix}$$
 
 ### 2.2 Matrix-scalar products
 A matrix-scalar product multiples each element of the matrix by a scalar. 
 
 An example of matrix scalar multiplication.
+
 $$ 2 \cdot \begin{bmatrix}1&2\cr 3&4 \end{bmatrix} = \begin{bmatrix}2\cdot1&2\cdot2\cr 2\cdot3&2\cdot4\end{bmatrix} = \begin{bmatrix}2&4\cr 6&8 \end{bmatrix}$$
 
 
@@ -117,6 +124,7 @@ Matrix multiplication follows a set of predefined rules when multiplying. There 
 2. Matrix multiplication is not **commutative** that is A &#0183; B &#8800 B &#0183; A. 
 
 Example of a matrix multiplication of 2 2x2 matrices:
+
 $$ \begin{bmatrix}1&2\cr 3&4 \end{bmatrix} \cdot \begin{bmatrix}5&6\cr 7&8 \end{bmatrix} = \begin{bmatrix}1\cdot5+2\cdot7&1\cdot6+2\cdot8\cr 3\cdot5+4\cdot7&3\cdot6+4\cdot8\end{bmatrix} = \begin{bmatrix}19&22\cr 43&50 \end{bmatrix}$$
 
 Here is a detailed version of how matrix multiplication is done:
@@ -128,6 +136,7 @@ To perform matrix multiplication, you take the first matrix's first row and mult
 **Important**: The size of the left matrix's columns and the right matrix's rows must be equal for this operation to work.
 
 Example of matrix multiplication of 2 3x3 matrices
+
 $$ \begin{bmatrix}4&2&0\cr 0&8&1\cr 0&1&0\end{bmatrix} \cdot \begin{bmatrix}4&2&1\cr 2&0&4\cr 9&4&2\end{bmatrix} = \begin{bmatrix}4\cdot4+2\cdot2+0\cdot9&4\cdot2+2\cdot0+0\cdot4&4\cdot1+2\cdot4+0\cdot2\cr 0\cdot4+8\cdot2+1\cdot9&0\cdot2+8\cdot0+1\cdot4&0\cdot1+8\cdot4+1\cdot2\cr  0\cdot4+1\cdot2+0\cdot9&0\cdot2+1\cdot0+0\cdot4 & 0 \cdot1 + 1\cdot4+0\cdot2 \end{bmatrix} = \begin{bmatrix}20&8&12\cr 25&4&34\cr 2&0&4\end{bmatrix}$$
 
 Matrix-matrix multiplication is a quit *tedious* process and it is prone to errors. This gets very troublesome when working with larger matrices. This is the reason we let computers do the work for us. 
@@ -141,6 +150,7 @@ A vector is a Nx1 matrix where N is the vector's number of components; this is a
 In OpenGL, 4x4 transformation of matrices is common for several reason and the first reason is that most vectors have a size of 4. An **identity matrix** is an NxN matrix with only 0s except on its diagonal. 
 
 This transformation of the matrix does not change the vector:
+
 $$\begin{bmatrix}1&0&0&0\cr 0&1&0&0\cr 0&0&1&0 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}1\cr2\cr 3\cr4\end{bmatrix} = \begin{bmatrix}1\cdot1\cr 1\cdot2\cr  1\cdot3 \cr 1\cdot 4 \end{bmatrix} = \begin{bmatrix}1\cr 2\cr 3\cr 4\end{bmatrix}$$
 
 ### 3.2 Scaling
@@ -153,6 +163,7 @@ Example of scaling a vector <span style="text-decoration:overline">v</span> = (3
 Since OpenGL usually operates in 3D space, we set the z-axis scale to 1 for 2D space; Leaving the z-axis the same. Scaling each axis by a different scaling factor is called **non-uniform scale**. When the scaling factor is the same for all axes, it is called a **uniform scale**.
 
 Example of scaling a vector by a matrix. The scaling variables are represented as (S1, S2, S3);. We can define a scaling matrix on any vector (x, y, z) as:
+
 $$\begin{bmatrix}S1&0&0&0\cr 0&S2&0&0\cr 0&0&S3&0 \cr0&0&0&S4\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr1\end{bmatrix} = \begin{bmatrix}S1\cdot x\cr S2\cdot y\cr  S3\cdot z \cr 1 \end{bmatrix}$$
 
 **Note**: The 4th scaling value is 1. The w component is used for other reasons.  
@@ -160,6 +171,7 @@ $$\begin{bmatrix}S1&0&0&0\cr 0&S2&0&0\cr 0&0&S3&0 \cr0&0&0&S4\end{bmatrix} \cdot
 **Translation** is the process of adding another vector on top of the original vector to return a new vector with a different position; this means we are *moving* the vector based on a translation vector. 
 
 We utilize a 4x4 matrix to perform certain operations and for translation; the important translation values are the top-3 values of the 4th column. We represent the translation vector as (Tx, Ty, Tz) and we implement the translation matrix by:
+
 $$\begin{bmatrix}1&0&0&Tx\cr 0&1&0&Ty\cr 0&0&1&Tz \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr 1\end{bmatrix} = \begin{bmatrix}x\cdot Tx\cr y\cdot Ty\cr  z\cdot Tz \cr 1 \end{bmatrix}$$
 
 This is allowed since all of the translation values are multiplied by the vector's w column (which is 1) and added to the vector's x, y, and z components. This is not allowed with a 3x3 matrix. 
@@ -195,26 +207,32 @@ With trigonometry, we can transform vectors to newly rotated vectors by an angle
 A rotation matrix is defined for each unit axis in 3D space where the angle is represented with the theta symbol (&#0952;).
 
 Rotation around the x-axis:
+
 $$\begin{bmatrix}1&0&0&0\cr 0&\cos(\theta) &\sin(\theta)&0\cr 0&\sin(\theta)&\cos(\theta)&0 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr 1\end{bmatrix} = \begin{bmatrix}x \cr \cos(\theta)\cdot y - \sin(\theta) \cdot z \cr  \sin(\theta)\cdot y + \cos(\theta) \cdot z \cr 1 \end{bmatrix}$$
 
 Rotation around the y-axis:
+
 $$\begin{bmatrix}\cos(\theta)&0&\sin(\theta)&0\cr 0&1 &0 &0\cr -\sin(\theta)&0&\cos(\theta)&0 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr 1\end{bmatrix} = \begin{bmatrix}\cos(\theta)\cdot x + \sin(\theta) \cdot z \cr y \cr  -\sin(\theta)\cdot x + \cos(\theta) \cdot z \cr 1 \end{bmatrix}$$
 
 Rotation around the z-axis:
+
 $$\begin{bmatrix}\cos(\theta)&-\sin(\theta)&0&0\cr \sin(\theta)&\cos(\theta) &0 &0\cr 0&0&1&0 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr 1\end{bmatrix} = \begin{bmatrix}\cos(\theta)\cdot x + \sin(\theta) \cdot y \cr \sin(\theta) \cdot x + \cos(\theta) \cdot y \cr  z \cr 1 \end{bmatrix}$$
 
 Using the rotation matrices can transform the position vectors around one of the three unit axes. In order to rotate around a random 3D axis, we combine all 3 of them by first rotating around the x-axis, then y-axis, and lastly the z-axis. Nevertheless, this introduces an issue called **Gimbal lock**. A better solution, is to rotate around a random unit axis like (0.662, 0.2, 0.722) instead of combining the rotation matrices. A matrix exists and this is given with (Rx, Ry, Rz) as the random rotation axis:
+
 $$\begin{bmatrix}\cos(\theta)+Rx^2(1-\cos(\theta))&RxRy(1-\cos(\theta))-Rz\sin(\theta)&RxRz(1-\cos(\theta))+Ry\sin(\theta)&0\cr RyRx(1-\cos(\theta))+Rz(\sin(\theta))&\cos(\theta)+Ry^2(1-\cos(\theta)) &RyRz(1-\cos(\theta))+Rx(\sin(\theta) &0\cr RzRx(1-\cos(\theta))-Ry\sin(\theta)&RzRy(1-\cos(\theta))+Rx\sin(\theta)&\cos(\theta)+Rz^2(1-\cos(\theta))&0 \cr0&0&0&1\end{bmatrix}$$
 
 Note, that this matrix does not absolutely prevent gimbal lock. Representing rotations using **quaternions** is the best way to prevent Gimbal locks; these are safer and computationally light. The topic of quaternions is out of the scope of this article. 
 
 ### 3.5 Combing matrices
 The true utility capability of using matrices for transformation is that we can combine multiple transformation in a single matrix by matrix-matrix multiplication. There is a vector (x, y, z). We want to scale it by 2 and translate it by (1, 2, 3). A translation and a scaling matrix are the required steps. Here is an example of the resulting transformation matrix:
+
 $$\begin{bmatrix}1&0&0&1\cr 0&1&0&2\cr 0&0&1&3 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}2&0&0&0\cr 0&2&0&0\cr 0&0&2&0 \cr0&0&0&1\end{bmatrix} = \begin{bmatrix}2&0&0&1\cr 0&2&0&2\cr 0&0&2&3 \cr0&0&0&1\end{bmatrix}$$
 
 Note that we first have to do a translation and then scale transformation when multiplying matrices. Matrix multiplication is not *commutative*; this means the order is important. It is considered to first do scaling operations, then rotations, and lastly translation when combining matrices. If you do not follow this rule, it may negatively affect each other. For example, if you do the translation before scaling it, the translation vector would also scale!
 
 Performing the final transformation matrix on the vector result in a different vector:
+
 $$\begin{bmatrix}2&0&0&1\cr 0&2&0&2\cr 0&0&2&3 \cr0&0&0&1\end{bmatrix} \cdot \begin{bmatrix}x\cr y\cr z\cr 1\end{bmatrix} = \begin{bmatrix}2x+1\cr 2y+2\cr  2z+3\cr 1 \end{bmatrix}$$
 
 Now the vector is scaled by two and translated by (1, 2, 3)
