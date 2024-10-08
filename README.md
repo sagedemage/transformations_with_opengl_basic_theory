@@ -12,6 +12,11 @@ Vectors in formulas look like this:
 
 $$v=\begin{pmatrix}x\cr y\cr z\cr\end{pmatrix}$$
 
+```math
+\sqrt{3}
+\begin{pmatrix}x\cr y\cr z\cr\end{pmatrix}
+```
+
 ### 1.1 Scalar vector operations
 A **scalar** is a single digit. Adding, subtracting, multiplying or dividing a vector with a scalar mean we add, subtract, multiply, or divide each element of the vector via a scalar.
 
