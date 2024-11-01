@@ -2,7 +2,17 @@
 
 Transformations with OpenGL basic theory article.
 
+Install all dependencies
+```
+pnpm install
+```
+
 Start the website
 ```
-npm run docs:dev
+pnpm docs:dev
+```
+
+Build the website
+```
+pnpm docs:build
 ```
