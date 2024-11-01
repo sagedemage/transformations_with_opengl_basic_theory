@@ -5,8 +5,8 @@
 *.*~
 
 # VitePress
-.vitepress/dist
-.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/cache
 
 # Node
 node_modules/

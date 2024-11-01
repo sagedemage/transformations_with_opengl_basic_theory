@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Transformations with OpenGL - Basic Theory",
   description: "Transformations with OpenGL basic theory article",
+  base: "/transformations_with_opengl_basic_theory/",
   markdown: {
     math: true
   },

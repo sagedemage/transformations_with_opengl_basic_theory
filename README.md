@@ -11,17 +11,17 @@ pnpm install
 
 Start the website
 ```
-pnpm docs:dev
+pnpm dev
 ```
 
 Build the website
 ```
-pnpm docs:build
+pnpm build
 ```
 
 Preview the built website
 ```
-pnpm docs:preview
+pnpm preview
 ```
 
 ## Why use pnpm?
