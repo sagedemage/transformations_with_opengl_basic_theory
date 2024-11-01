@@ -34,8 +34,6 @@ jobs:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       - name: Using pnpm
         uses: pnpm/action-setup@v3
-        with:
-           version: 9 # Not needed if you've set "packageManager" in package.json
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
