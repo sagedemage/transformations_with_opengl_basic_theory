@@ -30,3 +30,4 @@ pnpm docs:preview
 
 ## Resources
 - [Motivation - pnpm](https://pnpm.io/motivation)
+- [Deploy Your VitePress Site - VitePress](https://vitepress.dev/guide/deploy)
