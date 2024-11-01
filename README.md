@@ -2,6 +2,8 @@
 
 Transformations with OpenGL basic theory article.
 
+## Setup
+
 Install all dependencies
 ```
 pnpm install
