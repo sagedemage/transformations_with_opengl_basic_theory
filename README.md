@@ -19,6 +19,11 @@ Build the website
 pnpm docs:build
 ```
 
+Preview the built website
+```
+pnpm docs:preview
+```
+
 ## Why use pnpm?
 1. Save disk space
 2. Boost installation speed
