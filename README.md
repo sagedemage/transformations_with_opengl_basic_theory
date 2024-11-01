@@ -16,3 +16,10 @@ Build the website
 ```
 pnpm docs:build
 ```
+
+## Why use pnpm?
+1. Save disk space
+2. Boost installation speed
+
+## Resources
+- [Motivation - pnpm](https://pnpm.io/motivation)
