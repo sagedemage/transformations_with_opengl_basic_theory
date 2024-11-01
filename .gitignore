@@ -4,3 +4,10 @@
 # Cache files
 *.*~
 
+# VitePress
+.vitepress/dist
+.vitepress/cache
+
+# Node
+node_modules/
+
