@@ -257,6 +257,6 @@ I won't be going over the code for using GLM. I recommend you begin reading at "
 - [Vector magnitude & normalization - Khan Academy](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-vectors/a/vector-magnitude-normalization#:~:text=To%20normalize%20a%20vector%2C%20therefore,the%20unit%20vector%20readily%20accessible.)
 
 ### 5.1 Credit to Joey De Vries
-The content based on the OpenGL Tutorial - An Introduction on OpenGL with 2D Graphics article by Joey De Vries. The content is a heavily simplified version of his article in order to make it approachable for new graphics programmers. Thanks to Joey De Vries for providing this content.
+The content based on the [Transformations - LearnOpenGL OpenGL Tutorial](https://learnopengl.com/Getting-started/Transformations) article by Joey De Vries. The content is a heavily simplified version of his article in order to make it approachable for new graphics programmers. Thanks to Joey De Vries for providing this content.
 
 I would be promoting Joey De Vries's [personal website](https://joeydevries.com/#home) if you are interested.
